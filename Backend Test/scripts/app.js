@@ -4,7 +4,40 @@
     // store a reference to the application object that will be created
     // later on so that we can use it if need be
     var app;
+	
+    /*var news = $.ajax({
+        url: url + 'News',
+        type: "GET",
+        headers: {},
+        success: function(data){
+            news = JSON.stringify(data);
+            //console.log(news);
+            //alert(JSON.stringify(data));
+        },
+        error: function(error){
+            news = JSON.stringify(error);
+            //alert(JSON.stringify(error));
+        }
+    });
+    
+    
+    var el = new Everlive({
+    apiKey: 'JDbXjaTJnh523bQz',
+    masterKey: 'Zgi148ksrPsxupMqMxdYIwWNwImhQK2Z',
+    scheme: 'https'
+});
+    var dataNews = el.data('News');
+	var dataSourceNews = null;
+    dataNews.get()
+    .then(function(data){
+        dataSourceNews = new kendo.data.DataSource(data);
+        console.log(dataSourceNews);
+    },
+    function(error){
+        console.log(JSON.stringify(error));
+    });*/
 
+    
     // create an object to store the models for each view
     window.APP = {
       models: {
